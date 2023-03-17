@@ -1,9 +1,9 @@
 
-# ❌🖥️ XVFB Github Action
+# ☁️ XVFB Github Action
 
 > _Forked from [`GabrielBB/xvfb-action`](https://github.com/GabrielBB/xvfb-action) and updated Node v16.x_
 
-This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless tests with it. It cleans up the xvfb process after your tests are done. If it detects you're not using linux then your tests still run, but without xvfb, which is very practical for multi-platform workflows.
+This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless integration tests with it. It cleans up the xvfb process after your tests are done. If the action detects you're not using linux then your tests still run — just without xvfb — which is practical for multi-platform workflows.
 
 ### Example usage
 
@@ -16,10 +16,12 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Run headless test
+
+      - name: Run integration tests
         uses: smithki/xvfb-action@v1
         with:
           run: npm test
