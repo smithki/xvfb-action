@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "xvfb-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run your tests headlessly",
   "main": "index.js",
   "scripts": {
