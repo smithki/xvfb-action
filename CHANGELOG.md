@@ -1,3 +1,15 @@
+# v1.1.2 (Fri Mar 17 2023)
+
+#### 🐛 Bug Fix
+
+- Update GitHub Actions dependency cache to avoid deprecation message [#5](https://github.com/smithki/xvfb-action/pull/5) ([@smithki](https://github.com/smithki))
+
+#### Authors: 1
+
+- Ian K Smith ([@smithki](https://github.com/smithki))
+
+---
+
 # v1.1.1 (Fri Mar 17 2023)
 
 #### 🐛 Bug Fix
