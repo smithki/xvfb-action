@@ -24,12 +24,11 @@ jobs:
           node-version: 16.x
 
       - name: Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: npm-deps-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            npm-deps-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-deps-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
         run: npm ci
