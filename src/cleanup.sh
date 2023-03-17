@@ -7,7 +7,7 @@ kill_xvfb () {
         echo "Killing the following xvfb processes: $xvfb_pids"
         sudo kill $xvfb_pids
     else
-        echo "No xvfb processes to kill"
+        echo "No xvfb processes to kill."
     fi
 }
 
