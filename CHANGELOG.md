@@ -1,3 +1,15 @@
+# v1.1.1 (Fri Mar 17 2023)
+
+#### 🐛 Bug Fix
+
+- Test CI/CD flow [#4](https://github.com/smithki/xvfb-action/pull/4) ([@smithki](https://github.com/smithki))
+
+#### Authors: 1
+
+- Ian K Smith ([@smithki](https://github.com/smithki))
+
+---
+
 # v1.1.0 (Fri Mar 17 2023)
 
 #### 🚀 Enhancement
