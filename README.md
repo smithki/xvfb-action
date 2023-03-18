@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run integration tests
-        uses: smithki/xvfb-action@v1
+        uses: smithki/xvfb-action@v1.1.2
         with:
           run: npm test
           working-directory: ./ #optional
